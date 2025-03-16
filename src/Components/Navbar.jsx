@@ -49,7 +49,7 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <Link
-                to={item=="Home"? "/":  `/${item.toLowerCase()}`}
+                to={item==="Home" ? "/":  `/${item.toLowerCase()}`}
                 className="text-white hover:text-blue-300 transition duration-300"
               >
                 {item}
