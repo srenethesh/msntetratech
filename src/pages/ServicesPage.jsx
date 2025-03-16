@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const services = [
   {
     title: "Web Development",
@@ -83,13 +83,14 @@ const ServicesPage = () => {
         <p className="text-lg text-gray-700">
           Get in touch with us to discuss your project requirements.
         </p>
-        <motion.a
-          href="/contact"
+        <motion
           className="mt-6 inline-block bg-blue-950 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-800 transition duration-300"
           whileHover={{ scale: 1.1 }}
         >
-          Contact Us
-        </motion.a>
+          <Link to="/contact">
+              Contact Us
+          </Link>
+        </motion>
       </motion.section>
     </div>
   );
